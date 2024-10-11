@@ -10,6 +10,8 @@ COPY . .
 # Build TypeScript code
 RUN npm run build
 
+ENV PORT 8080
+
 # Expose the port
 EXPOSE 8080
 

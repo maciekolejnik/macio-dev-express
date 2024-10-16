@@ -4,6 +4,7 @@ on:
   schedule:
     # Run the workflow every 10 minutes
     - cron: "*/10 * * * *"  # Cron syntax for every 10 minutes
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
   send-request:

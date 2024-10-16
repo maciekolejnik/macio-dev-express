@@ -1,0 +1,14 @@
+name: Send GET request to macio.dev
+
+on:
+  schedule:
+    # Run the workflow every 10 minutes
+    - cron: "*/10 * * * *"  # Cron syntax for every 10 minutes
+
+jobs:
+  send-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send GET request to macio.dev
+        run: |
+          curl -I https://macio.dev
